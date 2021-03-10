@@ -29,6 +29,18 @@
                         </li>
                     </ul>
                 </div>
+
+                <form class="d-flex">
+                    <input id="link" class="form-control me-2" type="text" placeholder="Write the part" onchange="update()">
+                    <button id="base" class="btn btn-outline-success" type="submit">Go</button>
+
+                    <script>
+                        function update(){
+                            document.getElementById('base').href = 'https://dukeedivad05.github.io/' + 
+                            document.getElementById('link').value;
+                        }
+                    </script>
+                </form>
             </div>
         </nav>
 
@@ -36,6 +48,9 @@
         <p>Questo è il sito ufficiale di Duke Edivad05</p>
         <br>
         <P>In questo sito non ci sarà granché, ma soltanto qualche credito e qualche cosa per esercitazione</P>
+        <br>
+        <h1>Il sito è ancora in costruzione</h1> 
+        <p>e pian piano aggiungerò qualcosa</p>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
