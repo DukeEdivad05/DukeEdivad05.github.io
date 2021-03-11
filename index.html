@@ -7,6 +7,9 @@
 
         <link rel="icon" href="icon.ico">
         <title>DukeEdivad05</title>
+
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/colors.css">
         
     </head>
     <body>
@@ -14,7 +17,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">
-                    <img src="navbar-brand.png" alt="navbar-brand" height="50">
+                    <img src="navbar-brand.png" alt="navbar-brand">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#dukeMenu" aria-controls="dukeMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -27,21 +30,21 @@
                         <li id="nav-link-collaboratori" class="nav-item">
                             <a class="nav-link" href="collaboratori">Collaboratori</a>
                         </li>
+
+                        <form class="d-flex">
+
+                            <script>
+                                function update(){
+                                    document.getElementById('base').href = 'https://www.github.com/' + 
+                                    document.getElementById('link').value;
+                                }
+                            </script>
+        
+                            <input id="link" class="form-control me-2" type="text" placeholder="Where do you want to go?" onchange="update()">
+                            <button id="base" class="btn btn-outline-dark" type="submit">Go</button>
+                        </form>
                     </ul>
                 </div>
-
-                <form class="d-flex">
-
-                    <script>
-                        function update(){
-                            document.getElementById('base').href = 'https://www.github.com/' + 
-                            document.getElementById('link').value;
-                        }
-                    </script>
-
-                    <input id="link" class="form-control me-2" type="text" placeholder="Where do you want to go?" onchange="update()">
-                    <button id="base" class="btn btn-outline-dark" type="submit">Go</button>
-                </form>
             </div>
         </nav>
 
