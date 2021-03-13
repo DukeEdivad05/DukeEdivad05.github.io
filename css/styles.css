@@ -14,3 +14,8 @@
     border-radius: 25px;
     color: white;
 }
+.navbar .active {
+    background-color: var(--one-dark);
+    border-radius: 25px;
+    color: white;
+}
