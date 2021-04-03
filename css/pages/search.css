@@ -1,0 +1,17 @@
+#base {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    width: 22px;
+    padding: 10px 10px;
+    border: 1px solid var(--redcraft-red);
+    -webkit-border-radius: 3px;
+    border-radius: 25px;
+    font: normal 16px/normal "lato", Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: var(--one-dark);
+}
