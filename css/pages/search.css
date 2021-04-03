@@ -6,7 +6,7 @@
     cursor: pointer;
     width: 22px;
     padding: 10px 10px;
-    border: 1px solid var(--redcraft-red);
+    border: 1px solid var(--one-dark);
     -webkit-border-radius: 3px;
     border-radius: 25px;
     font: normal 16px/normal "lato", Helvetica, sans-serif;
