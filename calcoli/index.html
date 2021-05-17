@@ -19,13 +19,29 @@
 
         <h1>In Stack & In Shulker</h1>
         <br>
-
-        <input id='input' type="text" placeholder="Insert number" onchange="calculate()">
+        <input id='stackandshulkerin' type="number" placeholder="Insert number" onchange="stackandshulker()">
         <br>
         <br>
-        <p id="output">Inserisci un input e qui scriveremo l'equivalente in stack & in shulker</p>
-
+        <p id="stackandshulkerout">Inserisci un input e qui scriveremo l'equivalente in stack & in shulker</p>
         <script src="../js/mc1.js"></script>
+
+        <h1>Lista Random</h1>
+        <br>
+        <input id="listarandominmin" type="number" placeholder="Min" onchange="listarandom()">
+        <input id="listarandominmax" type="number" placeholder="Max" onchange="listarandom()">
+        <br>
+        <br>
+        <p id="listarandomout">Inserisci min e max e noi ti daremo i numeri</p>
+        <script src="../js/listarandom.js"></script>
+
+        <h1>Random</h1>
+        <br>
+        <input id="randominmin" type="number" placeholder="Min" onchange="randomico()">
+        <input id="randominmax" type="number" placeholder="Max" onchange="randomico()">
+        <br>
+        <br>
+        <p id="randomout">Inserisci min e max e genererò il numero</p>
+        <script src="../js/randomico.js"></script>
 
         <script>
             function includeHTML() {

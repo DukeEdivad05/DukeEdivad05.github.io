@@ -1,10 +1,20 @@
-function calculate() {
-    var input = parseInt(document.getElementById('input').value);
-    var stack = parseInt(String(input/64));
-    var resto = parseInt(String(input - 64 * stack));
-    var shulker = parseInt(String(stack / 27));
-    var resto2 = parseInt(String(stack - 27 * shulker));
-    var output = input + " » " + stack + " stack e " + resto + " » " + shulker + " shulker, " + resto2 + " stack e " + resto;
+function stackandshulker() {
+    var input, stack, resto, shulker, resto2, output;
+    input = parseInt(String(document.getElementById('stackandshulkerin').value));
+    stack = parseInt(String(input/64));
+    resto = parseInt(String(input - 64 * stack));
+    shulker = parseInt(String(stack / 27));
+    resto2 = parseInt(String(stack - 27 * shulker));
+    if(shulker == 0) {
+        if (stack == 0) {
+            output = input
+        } else {
+            output = input + " » " + stack + " stack e " + resto;
+        }
+    } else {
+        output = input + " » " + stack + " stack e " + resto + " » " + shulker + " shulker, " + resto2 + " stack e " + resto;
+    }
+    
 
-    document.getElementById('output').innerHTML = output;
+    document.getElementById('stackandshulkerout').innerHTML = output;
 }
