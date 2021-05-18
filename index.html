@@ -32,21 +32,16 @@
                         <li id="nav-link-collaboratori" class="nav-item">
                             <a class="nav-link" href="collaboratori">Collaboratori</a>
                         </li>
+                        <li id="nav-link-calcoli" class="nav-item">
+                            <a class="nav-link" href="calcoli">Calcoli</a>
+                        </li>
 
-                        <form class="d-flex">
-
-                            <script>
-                                function update(){
-                                    document.getElementById('base').href = 'https://dukeedivad05.github.io/' + 
-                                    document.getElementById('link').value;
-                                    document.getElementById('base').target = '_self'
-                                }
-                            </script>
-        
+                        <li>
+                        <form class="d-flex nav-item">
                             <input id="link" class="form-control me-2" type="text" placeholder="Where do you want to go?" onchange="update()">
-                            <!--<button id="base" class="btn btn-outline-dark" type="submit">Go</button>-->
-                            <a href="/" id="base" target="_blank">Go</a>
+                            <a class="nav-link" href="/" id="base" target="_blank">Go</a>
                         </form>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -70,6 +65,14 @@
                 <a href="https://multicore.network/" target="_blank"><img src="https://multicore.network/images/logo-round.png" height="50px"></a>
             </p>
         </footer>
+
+        <script>
+            function update(){
+                document.getElementById('base').href = 'https://dukeedivad05.github.io/' + 
+                document.getElementById('link').value;
+                document.getElementById('base').target = '_self'
+            }
+        </script>
 
         <script>
             function includeHTML() {
