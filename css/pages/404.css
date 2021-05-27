@@ -34,10 +34,10 @@
     background: var(--one-dark);
 }
 #errorContainer h1{
-    margin-top: -5%;
+    margin-top: +5%;
     font-size: 20vw;
     line-height: normal;
 }
 #errorContainer h2{
-    margin-top: -15%;
+    margin-top: +15%;
 }
