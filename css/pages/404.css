@@ -33,6 +33,27 @@
     text-decoration: none; 
     background: var(--one-dark);
 }
+#list {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    width: 150px;
+    padding: 10px 20px;
+    border: 1px solid var(--one-dark);
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font: normal 16px/normal "lato", Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: var(--one-dark);
+}
+#list:hover{ 
+    text-decoration: none; 
+    background: var(--one-dark);
+}
 #errorContainer h1{
     margin-top: +5%;
     font-size: 20vw;
