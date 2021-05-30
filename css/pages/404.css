@@ -13,6 +13,7 @@
     text-align: center;
 }
 #back {
+    text-decoration: none;
     display: inline-block;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
@@ -27,13 +28,14 @@
     color: rgba(255, 255, 255, 0.9);
     -o-text-overflow: clip;
     text-overflow: clip;
-    background: var(--one-dark);
+    background: var(--two-dark);
 }
 #back:hover{ 
     text-decoration: none; 
     background: var(--one-dark);
 }
 #list {
+    text-decoration: none;
     display: inline-block;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
@@ -41,7 +43,7 @@
     cursor: pointer;
     width: 150px;
     padding: 10px 20px;
-    border: 1px solid var(--one-dark);
+    border: 1px solid var(--two-dark);
     -webkit-border-radius: 3px;
     border-radius: 3px;
     font: normal 16px/normal "lato", Helvetica, sans-serif;
