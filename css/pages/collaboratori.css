@@ -1,3 +1,17 @@
 .btn:hover {
     background-color: var(--one-dark);
 }
+
+.collaboratori-link {
+    text-decoration:none;
+}
+
+.collaboratori-link:hover {
+    text-decoration:none;
+    text-align: center;
+    background-color: var(--one-dark);
+    transition: 0.1s;
+    border-radius: 25px;
+    padding:.2rem 1rem;
+    color: white;
+}
