@@ -10,7 +10,7 @@
 
 .navbar .navbar-nav .nav-link:hover {
     background-color: var(--one-dark);
-    transition: 0.2s;
+    transition: 0.1s;
     border-radius: 25px;
     color: white;
 }
