@@ -11,26 +11,34 @@
 
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="stylesheet" href="../css/colors.css">
+        <link rel="stylesheet" href="../css/pages/list.css">
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script src="../js/list.js"></script>
+        
     </head>
 
     <body>
         <div include-html="../components/navbar.html"></div>
         
         <ul>
-            <li>BisUmTo</li>
-            <li>calcoli</li>
-            <li>collaboratori</li>
-            <li>colori</li>
-            <li>discord</li>
-            <li>ds</li>
-            <li>ig</li>
-            <li>instagram</li>
-            <li>list</li>
-            <li>Music</li>
-            <li>Triton</li>
+            <label class="switch">
+                <input type="checkbox" onchange="target()">
+                <span class="slider round"></span>
+            </label>
+            <li><a id="link0" href="../Bisumto" target="_self">BisUmTo</a></li>
+            <li><a id="link1" href="../calcoli" target="_self">calcoli</a></li>
+            <li><a id="link2" href="../collaboratori" target="_self">collaboratori</a></li>
+            <li><a id="link3" href="../colori" target="_self">colori</a></li>
+            <li><a id="link4" href="../discord" target="_self">discord</a></li>
+            <li><a id="link5" href="../ds" target="_self">ds</a></li>
+            <li><a id="link6" href="../ig" target="_self">ig</a></li>
+            <li><a id="link7" href="../instagram" target="_self">instagram</a></li>
+            <li><a id="link8" href="../list" target="_self">list</a></li>
+            <li><a id="link9" href="../music" target="_self">music</a></li>
+            <li><a id="link10" href="../Triton" target="_self">Triton</a></li>
         </ul>
+
         <div include-html="../components/specialthanks.html"></div>
 
         <script>
