@@ -9,9 +9,13 @@
 .collaboratori-link:hover {
     text-decoration:none;
     text-align: center;
+    text-decoration-color: white;
     background-color: var(--one-dark);
     transition: 0.1s;
     border-radius: 25px;
-    padding:.2rem 1rem;
+    width: 150px;
+    padding: 17px 1rem;
+    padding-bottom: 22px;
+    padding-top: 17px;
     color: white;
 }
