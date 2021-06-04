@@ -56,3 +56,22 @@
   .slider.round:before {
     border-radius: 50%;
   }
+
+  .list-link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .list-link:hover {
+    text-decoration:none;
+    text-align: center;
+    text-decoration-color: white;
+    background-color: var(--one-dark);
+    transition: 0.1s;
+    border-radius: 25px;
+    width: 150px;
+    padding: 1px 1rem;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    color: white;
+  }
