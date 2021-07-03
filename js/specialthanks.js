@@ -1,5 +1,6 @@
 var h = window.innerHeight;
-var h2 = h - 200;
-if( h2 > 700 ) {
+var minh = document.getElementById('content').style.minHeight;
+var h2 = h - 216;
+if( h2 > minh ) {
     document.getElementById('content').style = "height:" + h2 + "px";
 }
