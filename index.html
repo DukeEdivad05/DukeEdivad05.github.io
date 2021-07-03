@@ -52,7 +52,7 @@
         </nav>
         <div style="height: 76px;"></div>
 
-        <div class="content">
+        <div id="content" class="content">
 
             
             <h1 style="text-align: center;">Il sito è ancora in costruzione</h1>
@@ -80,6 +80,15 @@
                 <a href="https://multicore.network/" target="_blank"><img src="https://multicore.network/images/logo-round.png" height="50px"></a>
             </p>
         </footer>
+
+        <script>
+            var h = window.innerHeight;
+            var h2 = h - 140 - 76;
+            if( h2 > 700 ) {
+                document.getElementById('content').style = "height:" + h2 + "px"
+            }
+
+        </script>
 
         <script>
             function update(){
