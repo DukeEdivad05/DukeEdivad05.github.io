@@ -1,0 +1,82 @@
+.orologio{
+  width:350px;
+  height:350px;
+  display:flex;
+  justify-content:center;
+  align-items:center; 
+  background:url(
+    https://www.byte-post.com/wp-content/uploads/2020/03/clock-number-only.png
+  );
+  background-size:cover;
+  border:10px solid #000000;
+  border-radius:50%;
+  box-shadow: 0 15px 15px rgba(0,0,0,0.3);
+}
+.orologio:before{
+    content:'';
+    position:absolute;
+    width:15px;
+    height:15px;
+    background:#000;
+    border-radius:50%;
+    z-index:100;
+}
+        
+.orologio .ora, .orologio .min,  .orologio .sec {
+    position:absolute;
+}
+        
+.o {
+    width:160px;
+    height:160px;
+}
+        
+.m {
+    width:190px;
+    height:190px;
+}
+        
+.s {
+    width:230px;
+    height:230px;
+}
+        
+.o, .m, .s {
+    display:flex;
+    justify-content:center;
+    border-radius:50%;
+}
+        
+.o:before {
+    content:'';
+    position:absolute;
+    width: 8px;
+    height:80px;
+    background:red;
+    border:1px solid rgb(166,0,0);
+    z-index:8;
+}
+        
+.m:before {
+    content:'';
+    position:absolute;
+    width: 5px;
+    height:90px;
+    background:red;
+    border:1px solid rgb(166,0,0);
+    z-index:9;
+}
+        
+.s:before {
+    content:'';
+    position:absolute;
+    width: 2px;
+    height:150px;
+    border:1px solid rgb(166,0,0);
+    background:red;
+    z-index:10;
+}
+        
+.o:before, .m:before, .s:before{
+  box-shadow: 3px  3px 4px  rgba(0,0,0,0.24);
+}
