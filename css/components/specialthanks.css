@@ -1,7 +1,7 @@
-.content {
-    flex: 1 0 auto;
-}
-
-.footer {
-    flex-shrink: 0;
+.footer{
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
 }
