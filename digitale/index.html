@@ -10,7 +10,6 @@
 
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="stylesheet" href="../css/colors.css">
-        <link rel="stylesheet" href="../css/pages/analogico.css">
         <link rel="stylesheet" href="../css/pages/digitale.css">
         <link rel="stylesheet" href="css/components/specialthanks.css">
 
@@ -21,30 +20,17 @@
         <div include-html="../components/navbar.html"></div>
 
         <div id="content" class="content">
-            <div style="height: 5px;"></div>
-            <div class="horizontal-center">
-                <a class="orologio" href="../analogico">
-                    <div class="ora">
-                        <div class="o" id="o"></div>
-                    </div>
-                    <div class="min">
-                        <div class="m" id="m"></div>
-                    </div>
-                    <div class="sec">
-                        <div class="s" id="s"></div>
-                    </div>
-                </a>
-                <div>
-                    <a href="../digitale" id="txt"></a>
-                </div>
-            </div>
+            <div id="txt" class="center"></div>
+            <p id="output"></p>
+            <button class="left-minus-button button" type="button" onclick="minus()">-</button>
+            <button class="right-plus-button button" type="button" onclick="plus()">+</button>
         </div>
 
         <div include-html="../components/specialthanks.html"></div>
 
+        <script src="../js/customfontsize.js"></script>
         <script src="../js/specialthanks.js"></script>
         <script src="../js/digitale.js"></script>
-        <script src="../js/analogico.js"></script>
 
         <script>
           function includeHTML() {
