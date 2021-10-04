@@ -14,20 +14,22 @@
         <link rel="stylesheet" href="../css/components/specialthanks.css">
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
     </head>
 
     <body onload="startTime()">
         <div include-html="../components/navbar.html"></div>
 
         <div id="content" class="content">
+            <div style="height: 76px;"></div>
+
             <div id="txt" class="center"></div>
-            <p id="output"></p>
             <button class="left-minus-button button" type="button" onclick="minus()">-</button>
             <button class="right-plus-button button" type="button" onclick="plus()">+</button>
+
+            <div style="height: 140px;"></div>
         </div>
 
-        <div include-html="../components/specialthanks.html" class="specialthanks"></div>
+        <div include-html="../components/specialthanks.html"></div>
 
         <script src="../js/customfontsize.js"></script>
         <script src="../js/digitale.js"></script>
@@ -54,7 +56,6 @@
                   return;
                   }
               }
-              document.getElementById("nav-link-orologio").classList.add("active");
           };
           includeHTML();
       </script>
