@@ -70,6 +70,7 @@ def main():
     root = Tk()
     ex = Example()
     dimensions = str(ex.test * (ex.dim + ex.dim2) + 20) + "x" + str(ex.test * (ex.dim + ex.dim2) + 20)
+    root.lift()
     root.geometry(dimensions)
     root.mainloop()
 
