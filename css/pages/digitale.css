@@ -8,20 +8,20 @@
 .left-minus-button{
     margin: 0;
     position: absolute;
-    top: 99%;
+    top: 87.5%;
     left: 0.5%;
-    -ms-transform: translate(-0.5%, -99%);
-    transform: translate(-0.5%, -99%);
+    -ms-transform: translate(-0.5%, -87.5%);
+    transform: translate(-0.5%, -87.5%);
 
 }
 
 .right-plus-button{
     margin: 0;
     position: absolute;
-    top: 99%;
+    top: 87.5%;
     left: 99.5%;
-    -ms-transform: translate(-99.5%, -99%);
-    transform: translate(-99.5%, -99%);
+    -ms-transform: translate(-99.5%, -87.5%);
+    transform: translate(-99.5%, -87.5%);
 }
 
 .button{
