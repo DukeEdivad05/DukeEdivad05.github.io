@@ -10,6 +10,7 @@
 
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="stylesheet" href="../css/colors.css">
+        <link rel="stylesheet" href="../css/pages/calcoli.css">
         <link rel="stylesheet" href="../css/components/specialthanks.css">
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
@@ -31,8 +32,9 @@
 
             <h1>Lista Random</h1>
             <br>
-            <input id="listarandominmin" type="number" placeholder="Min" onchange="listarandom()">
-            <input id="listarandominmax" type="number" placeholder="Max" onchange="listarandom()">
+            <input id="listarandominmin" type="number" placeholder="Min">
+            <input id="listarandominmax" type="number" placeholder="Max">
+            <button type="button" onclick="listarandom()" class="random-button">Generate</button>
             <br>
             <br>
             <p id="listarandomout">Inserisci min e max e noi ti daremo i numeri</p>
@@ -40,8 +42,9 @@
 
             <h1>Random</h1>
             <br>
-            <input id="randominmin" type="number" placeholder="Min" onchange="randomico()">
-            <input id="randominmax" type="number" placeholder="Max" onchange="randomico()">
+            <input id="randominmin" type="number" placeholder="Min">
+            <input id="randominmax" type="number" placeholder="Max">
+            <button type="button" onclick="randomico()"  class="random-button">Generate</button>
             <br>
             <br>
             <p id="randomout">Inserisci min e max e genererò il numero</p>

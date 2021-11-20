@@ -1,0 +1,16 @@
+.random-button {
+    background-color: #0d6efd;
+    transition: 0.1s;
+    border-radius: 25px;
+    color: var(--almost-white);
+    text-align: center;
+    border-style: none;
+}
+
+.random-button:hover {
+    background-color: var(--one-dark);
+    transition: 0.1s;
+    border-radius: 25px;
+    color: white;
+    border-style: none;
+}
