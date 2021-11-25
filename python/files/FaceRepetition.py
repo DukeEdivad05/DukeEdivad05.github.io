@@ -18,11 +18,19 @@ class Example(Frame):
 
     def initUI(self):
         
-        n = int(input("Inserisci quante righe vuoi: "))
+        while True:
+            n = int(input("Inserisci quante facce vuoi(si arrotonda al numero possibile minore): "))
+            if n >= 3:
+                break
         
-        self.test = n
+        somma = 0
+        for a in range(n//3 + 1):
+            somma += a
+            if somma > n//3:
+                break
+            self.test = a
 
-        self.master.title("CubeRepetition v2 - ")
+        self.master.title("FaceRepetition - "+ str((somma - a) * 3) + " faces")
         self.pack(fill=BOTH, expand=1)
 
         canvas = Canvas(self)
