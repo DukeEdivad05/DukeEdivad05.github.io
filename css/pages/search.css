@@ -15,3 +15,9 @@
     text-overflow: clip;
     background: var(--one-dark);
 }
+
+.ricerca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
