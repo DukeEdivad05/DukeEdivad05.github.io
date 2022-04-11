@@ -10,22 +10,66 @@
         <link rel="icon" href="../icon.ico">
         <title>DukeEdivad05</title>
 
-        <link rel="stylesheet" href="/css/styles.css">
-        <link rel="stylesheet" href="/css/colors.css">
-        <link rel="stylesheet" href="/css/pages/404.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/colors.css">
+        <link rel="stylesheet" href="css/pages/404.css">
         <link rel="stylesheet" href="css/components/specialthanks.css">
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <div include-html="/components/navbar.html"></div>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://github.com/DukeEdivad05">
+                    <img class="img-responsive" src="images/navbar-brand.png" alt="navbar-brand" height="50px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#dukeMenu" aria-controls="dukeMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="dukeMenu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li id="nav-link-home" class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li id="nav-link-collaboratori" class="nav-item">
+                            <a class="nav-link" href="collaboratori">Collaboratori</a>
+                        </li>
+                        <li id="nav-link-calcoli" class="nav-item">
+                            <a class="nav-link" href="calcoli">Calcoli</a>
+                        </li>
+
+                        <li id="nav-link-orologio" class="nav-item">
+                            <a class="nav-link" href="orologio">Orologio</a>
+                        </li>
+
+                        <li id="nav-link-programmazione" class="nav-item">
+                            <div class="dropdown nav-item">
+                                <button class="bottone-tendina nav-link dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Programmazione
+                                </button>
+                                <ul class="dropdown-link dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li>
+                                      <a class="dropdown-item" href="python" style="color: var(--almost-white); text-align: center;">Python</a></li>
+                                  <li>
+                                      <a class="dropdown-item" href="java" style="color: var(--almost-white); text-align: center;">Java</a></li>
+                                </ul>
+                              </div>
+                        </li>
+
+                        <li id="nav-link-dateStoriche" class="nav-item">
+                            <a class="nav-link" href="dateStoriche">Date Storiche</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
         <div id="content" class="content">
             <div style="height: 76px;"></div>
 
-            <section id="content">
-                <div class="content">
+            <section id="content404">
+                <div class="content404">
                     <div class="container-fluid bg-white block">
                         <section id="errorContainer">
                             <h1><i class="far fa-grin-beam-sweat"></i></h1>
@@ -42,7 +86,14 @@
             <div style="height: 140px;"></div>
         </div>
 
-        <div include-html="/components/specialthanks.html"></div>
+        <footer id="specialthanksfooter" class="bg-primary footer" style="height: 100px;">
+            <p class="footerParagraph">
+                Special Thanks to: <br>
+                <a href="https://bisumto.it/" target="_blank"><img src="https://bisumto.it/images/navbar-brand.png" height="50px"></a>
+                <a href="https://www.twitch.tv/LoreSchaeffer" target="_blank"><img src="images/LoreSchaeffer.png" alt="LoreSchaeffer's logo" height="50px"></a>
+                <a href="https://multicore.network/" target="_blank"><img src="https://multicore.network/images/logo-round.png" height="50px"></a>
+            </p>
+        </footer>
 
         <script>
           function includeHTML() {
@@ -55,6 +106,7 @@
                   xhttp = new XMLHttpRequest();
                   xhttp.onreadystatechange = function() {
                       if (this.readyState == 4) {
+                        console.log(this.responseText);
                       if (this.status == 200) {elmnt.innerHTML = this.responseText;}
                       if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
                           elmnt.removeAttribute("include-html");

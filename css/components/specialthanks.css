@@ -12,10 +12,28 @@
 	flex: shrink;
 } */
 
-html, body { height: 100%; }
+/* html, body { height: 100%; }
 
 .content{
     min-height: 96.7%;
     height: auto !important;
     margin: 0 5px -100px 5px;
+} */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex:1;
+}
+
+.footer{
+    padding: 0;
+}
+
+.footerParagraph {
+    margin: 11px;
 }
