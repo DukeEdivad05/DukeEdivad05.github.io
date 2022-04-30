@@ -56,13 +56,9 @@
                               </div>
                         </li>
 
-                        <li id="nav-link-dateStoriche" class="nav-item">
-                            <a class="nav-link" href="dateStoriche">Date Storiche</a>
-                        </li>
-
                         <li id="nav-search" class="nav-item">
-                        <form class="d-flex ricerca" >
-                            <input id="link" class="form-control me-2" type="text" placeholder="Where do you want to go?" onchange="update()" style="transition: 0.1s; border-radius: 25px; width: 214px;">
+                        <form class="d-flex ricerca" onsubmit="redirect()">
+                            <input id="link" class="form-control me-2" type="text" placeholder="Where do you want to go?" onchange="update()" style="transition: 0.1s; border-radius: 25px; width: 214px;" onfocusout="redirect()">
                             <a class="nav-link" href="/" id="base" target="_blank">Go</a>
                         </form>
                         </li>
@@ -104,6 +100,10 @@
         </footer>
 
         <script>
+            function redirect() {
+                alert("Sarai reindirizzato su " + document.getElementById('base').href);
+                window.location.href = document.getElementById('base').href;
+            }
             function update(){
                 document.getElementById('base').href = 'https://dukeedivad05.github.io/' + 
                 document.getElementById('link').value;
