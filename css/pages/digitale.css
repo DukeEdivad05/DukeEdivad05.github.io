@@ -6,13 +6,14 @@
 }
 
 .left-minus-button{
-    margin: 0;
+    /* margin: 0;
     position: absolute;
     top: 83%;
     left: 0.5%;
     -ms-transform: translate(-0.5%, -83%);
-    transform: translate(-0.5%, -83%);
-
+    transform: translate(-0.5%, -83%); */
+    display: grid;
+    place-items:center;
 }
 
 .right-plus-button{
@@ -25,18 +26,14 @@
 }
 
 .button{
-    display: inline-block;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
+    /* display: inline-block; */
+    /* -webkit-box-sizing: content-box; */
+    /* -moz-box-sizing: content-box; */
     box-sizing: content-box;
-    cursor: pointer;
     width: 22px;
     padding: 10px 10px;
-    border: 1px solid white;
-    -webkit-border-radius: 3px;
+    border: 1px solid var(--one-dark);
     border-radius: 25px;
-    -o-text-overflow: clip;
-    text-overflow: clip;
     background: white;
 }
 
