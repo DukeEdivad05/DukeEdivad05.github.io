@@ -17,7 +17,11 @@ window.addEventListener("keydown", function (event) {
     //  return; // Should do nothing if the default action has been cancelled
     //}
 
-    if (event.key == "+") {
+    if (event.key == "+" && event.altKey) {
+        plus(100)
+    } else if (event.key == "-" && event.altKey) {
+        minus(100)
+    } else if (event.key == "+") {
         plus(1);
     } else if (event.key == "-") {
         minus(1);
