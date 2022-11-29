@@ -24,9 +24,6 @@
 }
 
 .button{
-    /* display: inline-block; */
-    /* -webkit-box-sizing: content-box; */
-    /* -moz-box-sizing: content-box; */
     box-sizing: content-box;
     width: 22px;
     padding: 10px 10px;
