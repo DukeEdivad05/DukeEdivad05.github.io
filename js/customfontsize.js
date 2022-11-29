@@ -13,13 +13,17 @@ function plus(n) {
 }
 
 window.addEventListener("keydown", function (event) {
-    if (event.defaultPrevented) {
-      return; // Should do nothing if the default action has been cancelled
-    }
+    //if (event.defaultPrevented) {
+    //  return; // Should do nothing if the default action has been cancelled
+    //}
 
     if (event.key == "+") {
         plus(1);
     } else if (event.key == "-") {
         minus(1);
+    } else if (event.key == "*") {
+        plus(10)
+    } else if (event.key == "_") {
+        minus(10)
     }
   }, true);
