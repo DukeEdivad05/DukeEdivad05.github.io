@@ -1,8 +1,74 @@
-.orologio_center {
-    /* display: table;
-    margin: 0 auto;
-    text-align: center; */
+@media(min-width:991px) {
+    .orologio_display {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns:repeat(2, 50%);
+        grid-template-rows: repeat(1, 100%);
+        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
 
-    display: grid;
-    place-items: center;
+        height: calc(100% - 81px);
+    }
+
+    .orologioCenterDisplay {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .orologio {
+        margin-left: 7%;
+    }
+    
+}
+
+@media(max-width:991px) {
+    .orologio_display{
+        display: grid;
+        place-items: center;
+    }
+
+    
+}
+
+.orologio {
+    width: 82vmin;
+    height: 82vmin;
+}
+
+.o {
+    width: 32vmin;
+    height: 32vmin;
+}
+
+.m {
+    width: 38vmin;
+    height: 38vmin;
+}
+
+.s {
+    width: 46vmin;
+    height: 46vmin;
+}
+
+.o:before {
+    width: 1.6vmin;
+    height: 18vmin;
+}
+
+.m:before {
+    width: 1vmin;
+    height: 21vmin;
+}
+
+.s:before{
+    width: 0.4vmin;
+    height: 30vmin;
+}
+
+#txt {
+    font-size: 20vmin;
 }
