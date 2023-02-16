@@ -17,12 +17,14 @@
   border-radius:50%;
   box-shadow: 0 15px 15px rgba(0,0,0,0.3);
 }
+
 .orologio:before{
     content:'';
     position:absolute;
-    width:15px;
-    height:15px;
-    background:#000;
+    width:3.2vmin;
+    height:3.2vmin;
+    background: red;
+    border:1px solid rgb(166,0,0);
     border-radius:50%;
     z-index:100;
 }
